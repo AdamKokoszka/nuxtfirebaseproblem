@@ -38,7 +38,22 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
-    ['@nuxtjs/firebase'],
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: 'AIzaSyCGpjvQGggKLSEDIsSmhcX8aZHlFxZgTaM',
+          authDomain: 'nuxtproblemconfig.firebaseapp.com',
+          projectId: 'nuxtproblemconfig',
+          storageBucket: 'nuxtproblemconfig.appspot.com',
+          messagingSenderId: '879335000637',
+          appId: '1:879335000637:web:74b1ba575312121e25f854',
+        },
+        services: {
+          auth: true, // Just as example. Can be any other service.
+        },
+      },
+    ],
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
